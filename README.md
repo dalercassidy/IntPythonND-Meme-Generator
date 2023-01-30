@@ -1,4 +1,5 @@
 MEME GENERATOR
+--------------
 
 Overview:
 The project is a multimedia application that dynamically generates memes with an image overlaid with a quote.
@@ -9,7 +10,7 @@ in the top left corner of the image in an effort to overlay as much of the quote
 
 The program accepts user input via the command line and a flask web service.
 
-Commandline interface:
+Commandline Interface:
 ----------------------
 Accepts 3 optional arguments of body, author and image. If any of the arguments are missing, random selections are 
 made.
@@ -18,7 +19,7 @@ Example runs:
 python meme.py --path "_data\photos\dog\xander_1.jpg" 
 python meme.py --path "_data\photos\dog\xander_1.jpg" --author "me" --body "Enjoying Life"
 
-Flask web service:
+Flask Web Service:
 ------------------
 The web service accepts 3 arguments of body, author and image url. The image url is a url to an image that is
 downloaded and then overlaid with quote and author.
@@ -60,8 +61,9 @@ CSVIngestor - pandas
 DocxIngestor - docx
 PDFIngestor - uses subprocess to call pdftotext executable in xpdf library
 
-Examples how to use modules:
-----------------------------
+Examples on How to Use Modules:
+-------------------------------
+
 Example to print out all the quotes in a text file using Ingestor in QuoteEngine module:
 for q in Ingestor.parse(r'.\_data\DogQuotes\DogQuotesTXT.txt'):
     print(q)
