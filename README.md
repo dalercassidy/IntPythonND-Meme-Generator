@@ -16,8 +16,10 @@ Accepts 3 optional arguments of body, author and image. If any of the arguments 
 made.
 
 Example runs:
+```
 python meme.py --path "_data\photos\dog\xander_1.jpg" 
 python meme.py --path "_data\photos\dog\xander_1.jpg" --author "me" --body "Enjoying Life"
+```
 
 Flask Web Service:
 ------------------
@@ -65,10 +67,13 @@ Examples on How to Use Modules:
 -------------------------------
 
 Example to print out all the quotes in a text file using Ingestor in QuoteEngine module:
+```
 for q in Ingestor.parse(r'.\_data\DogQuotes\DogQuotesTXT.txt'):
     print(q)
-
+```
 Example to create a meme in the tmp directory with awidth of 380 using MemeEngine module:
+```
 m = MemeEngine('./tmp')
 m.make_meme('./_data/photos/dog/xander_1.jpg', "You must be the change you wish to see in the world.", "Gandhi", width=380)
+```
 
