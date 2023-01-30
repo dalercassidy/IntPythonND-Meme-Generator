@@ -1,7 +1,7 @@
 MEME GENERATOR
 --------------
 
-Overview:
+**Overview:**
 The project is a multimedia application that dynamically generates memes with an image overlaid with a quote.
 
 Quotes are loaded from the filetypes- csv, docx, pdf and txt. A strategy object properly ingests the correct format. 
@@ -35,7 +35,7 @@ flask
 Modules and Dependencies:
 -------------------------
 
-MemeEngine Module:
+**MemeEngine Module:**
 MemeEngine has a class called MemeEngine. The MemeEngine class is used to create a meme.
 The function "def make_meme(self, img_path, text, author, width=500) -> str:" returns the path
 to a new meme image. Inputs to the function are the path of the image, the quote, author and width to
@@ -43,7 +43,7 @@ resize the new image to which defaults to 500.
 
 Dependencies include the Pillow Module to manipulate images. 
 
-QuoteEngine Module:
+**QuoteEngine Module:**
 Used to generate quotes.
 
 Has an abstract class called IngestorInterface that has 2 abstract methods:
@@ -59,9 +59,9 @@ to parse a file. All classes return a list of Quotes. The quote is defined by th
 class with an author and a body.
 
 Dependencies:
-CSVIngestor - pandas
-DocxIngestor - docx
-PDFIngestor - uses subprocess to call pdftotext executable in xpdf library
+* CSVIngestor - pandas
+* DocxIngestor - docx
+* PDFIngestor - uses subprocess to call pdftotext executable in xpdf library
 
 Examples on How to Use Modules:
 -------------------------------
